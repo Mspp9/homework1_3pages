@@ -1,0 +1,37 @@
+nav 
+{
+  width: 960px;
+  margin: 0 auto;
+}
+nav:before
+{
+content: '';
+display: block;
+height: 50px;
+width: 100%;/*чтобы всегда читалась по ширине монитора*/
+background: #000;
+position: absolute;
+left: 0;
+z-index: -1; /*двигаем вниз черную полосу*/
+}
+ul 
+{
+margin: 0;
+padding: 0;
+list-style: none; /*убирает значки слева от названия*/
+height: 50px;
+}
+ul li
+{
+float: left; /*пункты меню расположенны по горизонтали*/
+}
+ul li a
+{
+  color: #fff;
+  display: block;
+  height: 50px;
+  padding: 0 30px; /*внутренний отступ*/
+  text-transform: uppercase;/*все буквы большие*/
+  text-decoration: none;/*убираем нижнее подчеркивание*/
+  line-height: 50px;/*положение строки, как правило равняется высоте блока и как правило располагается по центру*/
+}
